@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>König Ludwig I - Chatbot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app" class="chat-container">
+      <div class="header">
+        <div class="profile-section">
+          <div class="crown-icon">
+            <i class="fas fa-crown"></i>
+          </div>
+          <div class="profile-avatar">
+            <i class="fas fa-user"></i>
+          </div>
+        </div>
+        <h1 class="title">KÖNIG LUDWIG I</h1>
+        <p class="subtitle">König von Bayern, 1825-1848</p>
+      </div>
+
+      <div class="messages-container" id="messagesContainer"></div>
+
+      <div class="input-section">
+        <input
+          type="text"
+          id="messageInput"
+          placeholder="Send a message..."
+          class="message-input"
+        />
+        <button id="sendButton" class="send-button">
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+
+    </div>
+    <script type="module" src="main.js"></script>
+    <script src="https://apifreellm.com/apifree.min.js"></script>
+  </body>
+</html>
